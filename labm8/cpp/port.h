@@ -100,8 +100,13 @@
 #define LIBPROTOC_EXPORT
 #endif
 
+#ifndef PROTOBUF_RUNTIME_DEPRECATED
 #define PROTOBUF_RUNTIME_DEPRECATED(message)
+#endif
+
+#ifndef GOOGLE_PROTOBUF_RUNTIME_DEPRECATED
 #define GOOGLE_PROTOBUF_RUNTIME_DEPRECATED(message)
+#endif
 
 // ===================================================================
 // from google3/base/port.h
