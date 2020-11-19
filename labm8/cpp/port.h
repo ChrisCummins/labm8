@@ -120,12 +120,6 @@
 #define PROTOBUF_CXX11 0
 #endif
 
-#if PROTOBUF_CXX11
-#define PROTOBUF_FINAL final
-#else
-#define PROTOBUF_FINAL
-#endif
-
 namespace labm8 {
 
 typedef unsigned int uint;
