@@ -79,7 +79,6 @@ cc_library(
         ":callback",
         ":logging",
         ":macros",
-        ":mutex",
         ":once",
         ":port",
         ":status",
@@ -94,7 +93,6 @@ cc_test(
         ":casts",
         ":int128",
         ":logging",
-        ":mutex",
         ":once",
         ":status",
         ":stringpiece",
@@ -195,12 +193,6 @@ cc_library(
     deps = [
         ":port",
     ],
-)
-
-cc_library(
-    name = "mutex",
-    hdrs = ["mutex.h"],
-    visibility = ["//visibility:public"],
 )
 
 cc_library(
