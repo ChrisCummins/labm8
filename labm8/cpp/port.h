@@ -100,8 +100,13 @@
 #define LIBPROTOC_EXPORT
 #endif
 
+#ifndef PROTOBUF_RUNTIME_DEPRECATED
 #define PROTOBUF_RUNTIME_DEPRECATED(message)
+#endif
+
+#ifndef GOOGLE_PROTOBUF_RUNTIME_DEPRECATED
 #define GOOGLE_PROTOBUF_RUNTIME_DEPRECATED(message)
+#endif
 
 // ===================================================================
 // from google3/base/port.h
@@ -118,12 +123,6 @@
 #define PROTOBUF_CXX11 1
 #else
 #define PROTOBUF_CXX11 0
-#endif
-
-#if PROTOBUF_CXX11
-#define PROTOBUF_FINAL final
-#else
-#define PROTOBUF_FINAL
 #endif
 
 namespace labm8 {
